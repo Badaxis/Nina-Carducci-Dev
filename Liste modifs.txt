@@ -1,0 +1,5 @@
+Optimisation des images
+Utiliser le web sémantique
+Ajouter des options d'accessibilité
+Minifier le code
+Référencement local et section <head>
