@@ -1,5 +1,6 @@
 body {
 	max-width: 1920px;
+	min-width: 320px;
 	margin: auto;
 }
 
@@ -71,7 +72,6 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
 
 #about-me {
@@ -89,6 +89,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
 
 #about-me p {
@@ -96,13 +97,10 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-
 .title {
 	text-align: center;
 	padding-block: 2em;
+	font-size: 2rem;
 }
 
 .gallery .nav {
@@ -112,13 +110,14 @@ body {
 .nav-pills .nav-link {
 	color: #000;
 	cursor: pointer;
+}
 
-	&.active-tag {
-		color: #fff;
-		background-color: #BEB45A;
-		border-radius: 0;
-		cursor: default;
-	}
+.nav-pills .nav-link.active-tag {
+	color: #fff;
+	/* background-color: #BEB45A; */
+	background-color: #807833;
+	border-radius: 0;
+	cursor: default;
 }
 
 .item-column {
@@ -131,7 +130,6 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 
 .gallery-item {
@@ -164,7 +162,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 
 .quote__author {
@@ -194,7 +192,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding: 2em 0;
-
 }
 
 .service {
@@ -234,7 +231,6 @@ body {
 
 .form-container {
 	flex: 2;
-
 }
 
 form {
@@ -339,6 +335,10 @@ input[type="submit"] {
 		flex-direction: column;
 	}
 
+	form {
+		width: 100%;
+	}
+
 	#contact .picture.right {
 		margin-top: 1em;
 	}
@@ -385,10 +385,6 @@ input[type="submit"] {
 	#about, #contact {
 		padding-inline: 2em;
 		padding-block: 2em;
-	}
-
-	form {
-		width: 100%;
 	}
 
 	.picture {
